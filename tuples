@@ -1,0 +1,71 @@
+# tuple=(1,2,3,2,4)
+# print(tuple)
+# print(len(tuple))
+# print("First : ",tuple[0])
+# print("last: ",tuple[-1])
+
+# if 4 in tuple:
+#     print("present")
+# else:
+#     print("not present")
+
+# # sum of tuple
+# s=0
+# for i in range(len(tuple)):
+#     s+=tuple[i]
+# print(s)
+# print(sum(tuple))   builtin
+
+# #  max or min
+# max=tuple[0]
+# min=tuple[0]
+# for i in range(len(tuple)):
+#     if max<tuple[i]:
+#         max=tuple[i]
+#     if min>tuple[i]:
+#         min=tuple[i]
+# print(max , min)
+
+# # count frequency
+# visited=[]
+# for num in tuple:
+#     if num not in visited:
+#         print(num,"=",tuple.count(num))
+#         visited.append(num)
+
+# # add number by making list
+# tupl=(1,2,3,4)
+# l= list(tupl)
+# l.append(5)
+# tupl=tuple(l)
+# print(tupl)
+
+
+# # reverse tuple
+# t=(1,2,3,4)
+# # tupl1=t[::-1]
+# # print(tupl1)
+# rev=()
+# for i in range(len(t)-1,-1,-1):
+#     rev=rev+(t[i],)
+# print(rev)
+
+
+# # merge two tuple
+# t1=(1,2)
+# t2=(3,4)
+# res=t1+t2
+# print(res)
+
+# # print even no from tuple
+# t=(1,2,3,4,5,6,7,8)
+# for num in t:
+#     if num%2==0:
+#         print(num)
+
+# # palindrome
+# t=(1,2,3,2,1)
+# if t== t[::-1]:
+#     print("yes")
+# else:
+#     print("no")
