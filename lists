@@ -1,0 +1,162 @@
+# # print even no
+# list=[1,2,3,4,5,6]
+# for i in range(len(list)):
+#     if list[i]%2==0:
+#         print(list[i])
+
+# #  find sum of lists
+# list=[1,2,3,4,5]
+# sum=0
+# for i in range(len(list)):
+#     sum=sum+list[i]
+# print(sum)
+
+# # find largest element in list
+# list=[2,8,31,5,97,55]
+# max=list[0]
+# for i in range(len(list)):
+#     if max<list[i]:
+#         max=list[i]
+# print(max)
+
+# # second largest element
+# list=[2,8,31,5,97,55]
+# max=0
+# smax=0
+# for i in range(len(list)):
+#     if max<list[i]:
+#         smax=max
+#         max=list[i]
+#     elif max>list[i] and smax<list[i]:
+#         smax=list[i]
+# print(max)
+# print(smax)
+
+# # remove dup;icate from list
+# list=[1,2,2,3,4,4]
+# # res=[]
+# # for i in range(len(list)):
+# #     if list[i] not in res:
+# #         res.append(list[i])
+# # print(res)
+# i=0
+# while i <len(list):
+#     if list[i] in list[:i]:
+#         list.pop(list[i])
+#     else:
+#         i=i+1
+# print(list)
+
+
+# # reverse list
+# list=[1,25,21,3,4]
+# res=[]
+# for i in range(len(list)-1,-1,-1):
+#     res.append(list[i])
+# print(res)
+
+# # print odd number from list
+# list=[1,2,3,4]
+# for i in range(len(list)):
+#     if list[i]%2!=0:
+#         print(list[i])
+
+# # count even and odd
+# list=[1,2,3,4,5]
+# counte=0
+# countOdd=0
+# for i in range(len(list)):
+#     if list[i]%2==0:
+#         counte=counte+1
+#     else:
+#         countOdd+=1
+# print(counte)
+# print(countOdd)
+
+# # negative
+# list=[1,2,-7,9,5,-1]
+# l=[]
+# for i in range(len(list)):
+#     if list[i]<0:
+#         l.append(list[i])
+# print(l)
+
+# # print square of list
+# list=[1,2,3]
+# # for i in range(len(list)):
+# #     list[i]=list[i]*list[i]
+# # print(list)
+# sq=[]
+# for i in range(len(list)):
+#     sq.append(list[i]*list[i])
+# print(sq)
+
+# # sorted h ya nhii
+# list=[1,2,3,4]
+# issorted=True
+# for i in range(len(list)-1):
+#     if list[i]>list[i+1]:
+#         issorted=False
+#         break
+# if(issorted):
+#     print("sorted")
+# else:
+#     print("unsorted")
+
+# # union of two lists
+# list1 = [1,2,3]
+# list2 = [2,3,4]
+# res=[]
+# for num in list1:
+#     if num in list2:
+#         res.append(num)
+# print(res)
+
+# # frequency count
+# list=[1,2,2,3,4,4,4,4]
+# visited=[]
+# for num in list:
+#     if num not in visited:
+#         print(num,"=",list.count(num))
+#         visited.append(num)
+
+
+# left rotate
+# nums=[1,2,3,4]
+# first=nums[0]
+# for i in range(len(nums)-1):
+#     nums[i]=nums[i+1]
+# nums[-1]=first
+# print(nums)
+
+# # prime numbers
+# list=[1,2,3,4,5]
+# prime=[]
+# for num in list:
+#     if num>1:
+#       isprime=True
+#       for i in range(2,num):
+#          if num%i==0:
+#             isprime=False
+#             break
+#       if isprime:
+#          prime.append(num)
+# print(prime)
+
+# # palindrome
+# list=[1,2,3,2,1]
+# rev=[]
+# for i in range(len(list)-1,-1,-1):
+#     rev.append(list[i])
+# if list==rev:
+#     print("yes")
+# else:
+#     print("no")
+
+# # right rotate
+# list=[1,2,3,4]
+# last=list[-1]
+# for i in range(len(list)-1,0,-1):
+#     list[i]=list[i-1]
+# list[0]=last
+# print(list)
