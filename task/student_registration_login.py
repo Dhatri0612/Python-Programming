@@ -5,11 +5,10 @@ import os
 class StudentSystem:
     FILE_NAME = "students.json"
 
-    def __init__(self):
-        self.name_pattern = r"^[A-Za-z ]{3,30}$"
-        self.address_pattern = r"^[A-Za-z0-9 ,.\-/]{10,100}$"
-        self.id_pattern = r"^STU\d{4}$"
-        self.password_pattern = r"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$"
+    name_pattern = r"^[A-Za-z ]{3,30}$"
+    address_pattern = r"^[A-Za-z0-9 ,.\-/]{10,100}$"
+    id_pattern = r"^STU\d{4}$"
+    password_pattern = r"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$"
 
     # ------------------- REGISTRATION -------------------
     def register(self):
@@ -24,13 +23,13 @@ class StudentSystem:
         if not re.fullmatch(self.name_pattern, name):
             print("Invalid Name!")
             return
-        elif not re.fullmatch(self.address_pattern, address):
+        if not re.fullmatch(self.address_pattern, address):
             print("Invalid Address!")
             return
-        elif not re.fullmatch(self.id_pattern, student_id):
+        if not re.fullmatch(self.id_pattern, student_id):
             print("Invalid Student ID!")
             return
-        elif not re.fullmatch(self.password_pattern, password):
+        if not re.fullmatch(self.password_pattern, password):
             print("Invalid Password!")
             return
 
